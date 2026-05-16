@@ -1,0 +1,1231 @@
+<!DOCTYPE html>
+<!-- saved from url=(0059)file:///C:/Users/yehor/Downloads/offer_universal%20(1).html -->
+<html lang="uk"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Твій шлях до британського університету — Edinburgh &amp; Glasgow Student Support</title>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link href="./offer_universal (1)_files/css2" rel="stylesheet">
+<style>
+  :root {
+    --bg:         #f0f6fb;
+    --bg-deep:    #e2eef7;
+    --bg-card:    #ffffff;
+    --ink:        #0d1f2d;
+    --ink-soft:   #2a4255;
+    --muted:      #6b8fa8;
+    --accent:     #1a6fa8;
+    --accent-mid: #2e9bd4;
+    --accent-light: #d4eaf7;
+    --accent-glow: #a8d8f0;
+    --line:       #c0d9ec;
+    --line-soft:  #daeaf5;
+    --paper:      #ffffff;
+    --shadow-sm:  0 2px 12px rgba(26,111,168,0.08);
+    --shadow-md:  0 8px 32px rgba(26,111,168,0.12);
+    --shadow-lg:  0 20px 60px rgba(26,111,168,0.15);
+    --radius:     12px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html, body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'DM Sans', -apple-system, sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    direction: ltr;
+  }
+
+  /* Structural Reset for Left Alignment & Layout Safety */
+  h1, h2, h3, h4, p, ul, li, div, span, section, article, footer {
+    text-align: left;
+  }
+
+  /* ---- Decorative background ---- */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 80% 50% at 20% -10%, rgba(46,155,212,0.12) 0%, transparent 60%),
+      radial-gradient(ellipse 60% 40% at 85% 90%, rgba(26,111,168,0.10) 0%, transparent 55%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image:
+      linear-gradient(var(--line-soft) 1px, transparent 1px),
+      linear-gradient(90deg, var(--line-soft) 1px, transparent 1px);
+    background-size: 48px 48px;
+    opacity: 0.35;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 56px 40px 80px; /* Reduced side padding slightly for better overall constraint */
+    position: relative;
+    z-index: 1;
+  }
+
+  /* ---- Topbar ---- */
+  .topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 18px 28px;
+    background: rgba(255,255,255,0.85);
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 48px;
+    font-size: 11.5px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    flex-wrap: wrap; /* Safety for tight screens */
+  }
+
+  .topbar .mark {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 17px;
+    letter-spacing: 0;
+    text-transform: none;
+    color: var(--ink);
+  }
+
+  .topbar-badge {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--accent-light);
+    color: var(--accent);
+    padding: 5px 14px;
+    border-radius: 100px;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    border: 1px solid var(--accent-glow);
+  }
+  
+  .topbar-badge::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent-mid);
+    animation: pulse 2s infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(0.8); }
+  }
+
+  /* ---- Hero ---- */
+  .hero {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr; /* Optimized proportion to avoid text cramping */
+    gap: 48px;
+    align-items: center;
+    padding: 64px;
+    background: linear-gradient(135deg, var(--paper) 0%, rgba(212,234,247,0.4) 100%);
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    box-shadow: var(--shadow-md);
+    margin-bottom: 56px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    right: -60px;
+    top: -60px;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
+    opacity: 0.5;
+  }
+  
+  .hero::after {
+    content: '';
+    position: absolute;
+    left: -40px;
+    bottom: -40px;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: radial-gradient(circle, var(--accent-light) 0%, transparent 70%);
+    opacity: 0.7;
+  }
+
+  .eyebrow {
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 500;
+  }
+  
+  .eyebrow::before {
+    content: '';
+    width: 32px;
+    height: 2px;
+    background: linear-gradient(90deg, var(--accent-mid), var(--accent));
+    border-radius: 2px;
+    flex-shrink: 0;
+  }
+
+  h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size: clamp(36px, 4.5vw, 64px); /* Smoother sizing scale */
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    position: relative;
+    z-index: 1;
+  }
+  
+  h1 em {
+    font-style: italic;
+    color: var(--accent);
+    position: relative;
+  }
+  
+  h1 em::after {
+    content: '';
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent-mid), var(--accent-glow));
+    border-radius: 2px;
+    opacity: 0.4;
+  }
+
+  .hero-aside {
+    font-size: 15.5px;
+    line-height: 1.7;
+    color: var(--ink-soft);
+    position: relative;
+    z-index: 1;
+  }
+  
+  .hero-aside strong {
+    color: var(--accent);
+    font-weight: 600;
+  }
+
+  .hero-stats {
+    display: flex;
+    gap: 16px;
+    margin-top: 32px;
+    padding-top: 28px;
+    border-top: 1px solid var(--line);
+  }
+  
+  .stat {
+    text-align: left; /* Unified Left Alignment */
+    flex: 1;
+    min-width: 100px;
+    padding: 16px;
+    background: rgba(255,255,255,0.7);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+  }
+  
+  .stat-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--accent);
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+  
+  .stat-label {
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    line-height: 1.3;
+  }
+
+  /* ---- Section styles ---- */
+  .section-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 40px;
+    gap: 32px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--line);
+  }
+
+  .section-head h2,
+  .services-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size: 36px;
+    letter-spacing: -0.015em;
+    color: var(--ink);
+  }
+  
+  .services-title em {
+    font-style: italic;
+    color: var(--accent);
+  }
+  
+  .section-label {
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+  /* ---- Services grid ---- */
+  .services {
+    margin-bottom: 56px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .service {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 36px 32px;
+    display: flex; /* Changed to flex layout to prevent text columns overflowing */
+    gap: 24px;
+    box-shadow: var(--shadow-sm);
+    transition: box-shadow 0.25s ease, transform 0.25s ease, border-color 0.25s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .service::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-mid));
+    opacity: 0;
+    transition: opacity 0.25s ease;
+  }
+  
+  .service:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+    border-color: var(--accent-glow);
+  }
+  
+  .service:hover::before {
+    opacity: 1;
+  }
+
+  .service-content {
+    flex: 1; /* Forces text to responsibly wrap inside the block boundaries */
+    min-width: 0;
+  }
+
+  .num {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1;
+    color: var(--accent-glow);
+    letter-spacing: -0.02em;
+    flex-shrink: 0;
+  }
+
+  .service h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: -0.01em;
+    margin-bottom: 12px;
+    line-height: 1.3;
+    color: var(--ink);
+  }
+
+  .service p.lead {
+    font-size: 14px;
+    color: var(--ink-soft);
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+
+  .service ul {
+    list-style: none;
+    font-size: 13.5px;
+    color: var(--ink-soft);
+  }
+  
+  .service li {
+    padding: 6px 0 6px 20px;
+    position: relative;
+    line-height: 1.5;
+    border-bottom: 1px solid var(--line-soft);
+  }
+  
+  .service li:last-child { border-bottom: none; }
+  
+  .service li::before {
+    content: '›';
+    position: absolute;
+    left: 2px;
+    color: var(--accent-mid);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.3;
+  }
+  
+  .service li strong {
+    color: var(--accent);
+    font-weight: 600;
+  }
+
+  /* ---- Callout ---- */
+  .callout {
+    background: linear-gradient(135deg, var(--accent) 0%, #1558a0 100%);
+    color: white;
+    padding: 44px 48px;
+    margin-bottom: 56px;
+    border-radius: 16px;
+    box-shadow: 0 16px 48px rgba(26,111,168,0.2);
+    overflow: hidden;
+  }
+  
+  .callout .label {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.7);
+    font-weight: 500;
+    margin-bottom: 12px;
+  }
+  
+  .callout h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size: 26px;
+    margin-bottom: 12px;
+    letter-spacing: -0.01em;
+    line-height: 1.3;
+  }
+  
+  .callout p {
+    font-size: 15px;
+    opacity: 0.88;
+    max-width: 760px;
+    line-height: 1.65;
+  }
+
+  /* ---- Why section ---- */
+  .why {
+    padding: 56px 0;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 48px;
+    border-top: 1px solid var(--line);
+    margin-bottom: 56px;
+  }
+  
+  .why h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size: 38px;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+    color: var(--ink);
+  }
+  
+  .why h2 em { font-style: italic; color: var(--accent); }
+  
+  .why-text p {
+    font-size: 15px;
+    line-height: 1.75;
+    color: var(--ink-soft);
+    margin-bottom: 20px;
+  }
+  
+  .why-text p:last-child { margin-bottom: 0; }
+  .why-text strong { color: var(--ink); font-weight: 600; }
+
+  /* ---- Package ---- */
+  .package {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 48px;
+    margin-bottom: 48px;
+    box-shadow: var(--shadow-sm);
+  }
+  
+  .package h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size: 32px;
+    letter-spacing: -0.015em;
+    margin-bottom: 32px;
+  }
+  
+  .package h2 em { font-style: italic; color: var(--accent); }
+  
+  .package-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 48px; /* Clean dynamic separation between columns */
+    border-top: 1px solid var(--line-soft);
+  }
+  
+  .pkg-item {
+    padding: 20px 0;
+    border-bottom: 1px solid var(--line-soft);
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    font-size: 14px;
+    color: var(--ink-soft);
+  }
+  
+  .pkg-check {
+    width: 22px;
+    height: 22px;
+    background: var(--accent-light);
+    border: 1px solid var(--accent-glow);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent);
+    font-size: 12px;
+    flex-shrink: 0;
+    margin-top: 2px;
+    font-weight: 700;
+  }
+  
+  .pkg-title {
+    font-weight: 600;
+    color: var(--ink);
+    display: block;
+    margin-bottom: 4px;
+    font-size: 14px;
+  }
+
+  /* ---- Pricing accordion ---- */
+  .pricing {
+    margin-bottom: 48px;
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .pricing-trigger {
+    width: 100%;
+    background: var(--paper);
+    border: none;
+    cursor: pointer;
+    padding: 28px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    color: var(--ink);
+    transition: background 0.2s ease;
+  }
+  
+  .pricing-trigger:hover { background: var(--bg); }
+
+  .pricing-trigger h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size: 28px;
+    letter-spacing: -0.015em;
+  }
+  
+  .pricing-trigger h2 em { font-style: italic; color: var(--accent); }
+
+  .pricing-arrow {
+    width: 38px;
+    height: 38px;
+    border: 1.5px solid var(--line);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: transform 0.35s ease, background 0.2s ease, border-color 0.2s;
+    color: var(--accent);
+    font-size: 18px;
+    line-height: 1;
+    background: var(--accent-light);
+  }
+  
+  .pricing-open .pricing-arrow {
+    transform: rotate(180deg);
+    background: var(--accent);
+    color: white;
+    border-color: var(--accent);
+  }
+
+  .pricing-body {
+    border-top: 1px solid var(--line);
+    padding: 0 40px 12px;
+    background: var(--paper);
+  }
+
+  .pricing-item {
+    display: flex; /* Changed from Grid to Flex to prevent text/price side overlapping */
+    justify-content: space-between;
+    gap: 32px;
+    align-items: flex-start;
+    padding: 28px 0;
+    border-bottom: 1px solid var(--line-soft);
+  }
+  
+  .pricing-item:last-child { border-bottom: none; }
+
+  .pricing-item-info {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .pricing-item-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size: 19px;
+    letter-spacing: -0.01em;
+    margin-bottom: 6px;
+    color: var(--ink);
+    line-height: 1.3;
+  }
+  
+  .pricing-item-desc {
+    font-size: 14px;
+    color: var(--ink-soft);
+    line-height: 1.6;
+  }
+  
+  .pricing-item-price {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 24px;
+    color: var(--accent);
+    white-space: nowrap;
+    text-align: right;
+    flex-shrink: 0;
+    padding-top: 2px;
+  }
+  
+  .pricing-item-price small {
+    display: block;
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-top: 4px;
+  }
+
+  /* ---- CTA ---- */
+  .cta {
+    background: linear-gradient(135deg, #f5fafd 0%, var(--accent-light) 100%);
+    border: 1px solid var(--accent-glow);
+    border-radius: 20px;
+    padding: 48px;
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 48px;
+    align-items: start;
+    box-shadow: var(--shadow-md);
+  }
+  
+  .cta h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    margin-bottom: 20px;
+    color: var(--ink);
+  }
+  
+  .cta h2 em { font-style: italic; color: var(--accent); }
+  
+  .cta p {
+    font-size: 15px;
+    color: var(--ink-soft);
+    line-height: 1.65;
+  }
+  
+  .cta-list {
+    margin: 20px 0;
+    list-style: none;
+    font-size: 14px;
+    color: var(--ink-soft);
+  }
+  
+  .cta-list li {
+    padding: 6px 0 6px 22px;
+    position: relative;
+    line-height: 1.5;
+  }
+  
+  .cta-list li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--accent-mid);
+  }
+  
+  .cta-note {
+    font-size: 13.5px;
+    color: var(--muted);
+    line-height: 1.5;
+  }
+
+  .cta-action {
+    background: white;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 36px;
+    box-shadow: var(--shadow-sm);
+    align-self: stretch;
+  }
+  
+  .cta-action .label {
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+  
+  .cta-action .time {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 26px;
+    margin-bottom: 24px;
+    color: var(--ink);
+    line-height: 1.2;
+  }
+  
+  .btn {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--accent) 0%, #1558a0 100%);
+    color: white;
+    padding: 16px 32px;
+    font-size: 12.5px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 8px;
+    border: none;
+    transition: all 0.25s ease;
+    font-weight: 600;
+    box-shadow: 0 4px 16px rgba(26,111,168,0.35);
+    width: 100%;
+    text-align: center;
+  }
+  
+  .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 28px rgba(26,111,168,0.45);
+    background: linear-gradient(135deg, var(--accent-mid) 0%, var(--accent) 100%);
+  }
+
+  .prep-list {
+    list-style: none;
+    font-size: 13.5px;
+    color: var(--ink-soft);
+    line-height: 1.6;
+  }
+  
+  .prep-list li {
+    padding: 6px 0 6px 18px;
+    position: relative;
+  }
+  
+  .prep-list li::before {
+    content: '●';
+    position: absolute;
+    left: 0;
+    color: var(--accent-mid);
+    font-size: 8px;
+    top: 7px;
+  }
+
+  .divider {
+    margin: 28px 0 0px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+  }
+  
+  .divider-label {
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 14px;
+    font-weight: 500;
+  }
+
+  /* ---- Footer ---- */
+  footer {
+    margin-top: 80px;
+    padding: 28px 32px;
+    border-radius: var(--radius);
+    background: rgba(255,255,255,0.6);
+    backdrop-filter: blur(8px);
+    border: 1px solid var(--line);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 32px;
+    font-size: 11.5px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  
+  footer .sign {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 17px;
+    letter-spacing: 0;
+    text-transform: none;
+    color: var(--ink);
+  }
+  
+  footer .footer-sources {
+    text-align: right;
+  }
+
+  /* ---- Responsive Fixes ---- */
+  @media (max-width: 960px) {
+    .page { padding: 32px 20px 56px; }
+    .hero { grid-template-columns: 1fr; gap: 32px; padding: 40px; }
+    .hero::before, .hero::after { display: none; }
+    .grid, .why, .cta { grid-template-columns: 1fr; gap: 24px; }
+    .package-grid { grid-template-columns: 1fr; gap: 0; }
+    .package { padding: 32px; }
+    .pricing-trigger { padding: 24px; }
+    .pricing-body { padding: 0 24px 12px; }
+    .pricing-item { gap: 16px; }
+    .callout { padding: 32px; }
+    .section-head { flex-direction: column; align-items: flex-start; gap: 8px; }
+    
+    /* FIX: Preserved proper internal block padding on mobile so content never leaks out */
+    .service { padding: 32px 24px; } 
+  }
+
+  @media (max-width: 600px) {
+    .topbar { flex-direction: column; align-items: flex-start; gap: 12px; padding: 20px; }
+    .hero { padding: 32px 20px; }
+    .hero-stats { flex-direction: column; gap: 12px; }
+    .pricing-item { flex-direction: column; gap: 12px; }
+    .pricing-item-price { text-align: left; }
+    .cta { padding: 24px; }
+    .cta-action { padding: 24px; }
+    footer { flex-direction: column; align-items: flex-start; gap: 16px; }
+    footer .footer-sources { text-align: left; }
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <div class="topbar">
+    <div class="mark">Edinburgh &amp; Glasgow Student Support</div>
+    <div class="topbar-badge">Зараз приймаємо заявки</div>
+  </div>
+
+  <section class="hero">
+    <div>
+      <div class="eyebrow">Покроковий супровід від випускників топових британських університетів</div>
+      <h1>Твій шлях<br>до британського<br><em>університету.</em></h1>
+    </div>
+    <div class="hero-aside">
+      <p>Вісім етапів — від вибору спеціальності до першого тижня навчання. <strong>В Единбурзі та Глазго ми зустрічаємо особисто.</strong></p>
+      <div class="hero-stats">
+        <div class="stat">
+          <div class="stat-num">8</div>
+          <div class="stat-label">Етапів супроводу</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Міста присутності</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">100%</div>
+          <div class="stat-label">Індивідуальний підхід</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services">
+    <div class="section-head">
+      <h2 class="services-title">Що ми <em>робимо</em> разом</h2>
+      <div class="section-label">8 етапів · від вибору до старту</div>
+    </div>
+
+    <div class="grid">
+
+      <article class="service">
+        <div class="num">01</div>
+        <div class="service-content">
+          <h3>Визначаємо напрямок</h3>
+          <p class="lead">Якщо ти ще не обрав(ла) спеціальність — починаємо звідси. Якщо вже обрав(ла) — перевіряємо, чи рішення витримає наступні чотири роки.</p>
+          <ul>
+            <li>Тестування інтересів і сильних сторін</li>
+            <li>Розбір професій: попит на ринку праці, зарплати, перспективи</li>
+            <li>Індивіذجльна консультація з кар'єрним радником</li>
+            <li>Список <strong>3–5 напрямків</strong>, що реально підходять</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="service">
+        <div class="num">02</div>
+        <div class="service-content">
+          <h3>Підбираємо університети</h3>
+          <p class="lead">Рейтинг — лише один критерій з десяти. Підбираємо університети за профілем програми, вимогами до іноземних дипломів, вартістю і реальними шансами.</p>
+          <ul>
+            <li>Перевірка визнання твого диплому або атестату</li>
+            <li>Бакалавр: <strong>£8 000–40 000/рік</strong></li>
+            <li>Проживання: Лондон <strong>від £1 400/міс.</strong>, інші міста <strong>від £900/міс.</strong></li>
+            <li>5+ варіантів: target / safe / reach</li>
+            <li>Окрема увага до Единбурга і Глазго — де ми є фізично</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="service">
+        <div class="num">03</div>
+        <div class="service-content">
+          <h3>Підготовка мови</h3>
+          <p class="lead">Підтвердження рівня англійської — обов'язкова умова для отримання офера і візи. Ми допомагаємо підготуватися і обрати правильний іспит.</p>
+          <ul>
+            <li>Діагностика поточного рівня і плану підготовки</li>
+            <li>IELTS, TOEFL або PTE Academic — допомога з вибором</li>
+            <li>Мінімальний рівень: <strong>B2 (IELTS 5.5–6.5)</strong> залежно від програми</li>
+            <li>Альтернативи для тих, хто навчався англійською</li>
+            <li>Підготовчі матеріали і рекомендовані курси</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="service">
+        <div class="num">04</div>
+        <div class="service-content">
+          <h3>Подача через UCAS</h3>
+          <p class="lead">Одна заявка на п'ять університетів. Personal Statement пишеться один раз для всіх — тому він вирішує більше, ніж здається.</p>
+          <ul>
+            <li>Реєстрація та заповнення UCAS-профілю — без помилок</li>
+            <li>Написання Personal Statement: кілька ітерацій і фінальна вичитка</li>
+            <li>Підготовка документів: диплом, оцінки, рекомендації</li>
+            <li>Контроль дедлайнів</li>
+            <li>Вступні тести BMAT, LNAT, MAT, UCAT — підготовка за потреби</li>
+            <li>Допомога з вибором між кількома офферами</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="service">
+        <div class="num">05</div>
+        <div class="service-content">
+          <h3>Співбесіди та тести</h3>
+          <p class="lead">Деякі університети та програми проводять співбесіди або вимагають додаткових іспитів. Ми готуємо заздалегідь, щоб не бути застигнутим зненацька.</p>
+          <ul>
+            <li>Підготовка до академічних співбесід: структура, типові питання</li>
+            <li>Моковані співбесіди з зворотним зв'язком</li>
+            <li>Підготовка до специфічних тестів залежно від напрямку</li>
+            <li>Оксфорд та Кембридж — окремий формат підготовки</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="service">
+        <div class="num">06</div>
+        <div class="service-content">
+          <h3>Студентська віза</h3>
+          <p class="lead">Тут не буває «майже правильно». Один невірно заповнений рядок — і заявка повертається або отримує відмову.</p>
+          <ul>
+            <li>CAS від університету — що це, коли видається і як перевірити</li>
+            <li>Фінансові вимоги: <strong>£1 600/міс.</strong> Лондон, <strong>£1 200/міс.</strong> інші міста (на рахунку 28 днів)</li>
+            <li>Повний чеклист документів: паспорт, CAS, фінанси, IHS</li>
+            <li>Заповнення візової заявки, біометрія, відстеження статусу</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="service">
+        <div class="num">07</div>
+        <div class="service-content">
+          <h3>Підготовка до переїзду</h3>
+          <p class="lead">Житло, бюджет, документи, щеплення. Те, що краще вирішити за два місяці до вильоту, а не за тиждень.</p>
+          <ul>
+            <li>Гуртожиток <strong>від £700/міс.</strong> або приватна оренда <strong>від £600/міс.</strong></li>
+            <li>Поради по районах Единбурга і Глазго: безпека, транспорт, відстань до університету</li>
+            <li>Щеплення MenACWY, MMR, HPV — заздалегідь</li>
+            <li>SIM-карта (<strong>~£20/міс.</strong>), готівка, місцевий проїзний</li>
+            <li>Планування бюджету першого місяця</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="service">
+        <div class="num">08</div>
+        <div class="service-content">
+          <h3>Зустріч та старт на місці</h3>
+          <p class="lead">В Единбурзі та Глазго ми зустрінемо тебе особисто. Усе, що потрібно зробити в перший тиждень — зробимо разом.</p>
+          <ul>
+            <li>Трансфер з аеропорту, допомога із заселенням</li>
+            <li>Реєстрація у лікаря (GP) і стоматолога</li>
+            <li>Відкриття британського банківського рахунку і отримання BRP</li>
+            <li>SIM-карта, транспортна картка, ознайомча прогулянка містом</li>
+            <li><strong>Персональний наставник на зв'язку протягом першого семестру</strong></li>
+          </ul>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <div class="callout">
+    <div class="label">Важливо знати</div>
+    <div>
+      <h3>Підготовка займає мінімум 6–12 місяців</h3>
+      <p>Чим раніше ти починаєш — тим більше варіантів, тим якісніший Personal Statement і тим більше часу на підготовку до мовного тесту чи співбесіди. Не відкладай старт.</p>
+    </div>
+  </div>
+
+  <section class="why">
+    <h2>Чому <em>зараз</em> — і навіщо супровід</h2>
+    <div class="why-text">
+      <p>Британські університети — одні з найпрестижніших у світі. Але процес вступу для іноземних студентів має свою специфіку: іноземні дипломи визнаються по-різному залежно від університету і програми, а помилка в UCAS або візовій заявці може коштувати цілого року.</p>
+      <p><strong>Підготовка займає мінімум 6–12 місяців.</strong> Чим раніше починаємо — тим більше варіантів, тим якісніший Personal Statement і тим більше часу на підготовку до мовного тесту чи співбесіди.</p>
+      <p>Ми не просто надаємо інформацію — ми проходимо цей шлях разом, від першої консультації до першого семестру. В Единбурзі та Глазго ми є фізично — і це відрізняє нас від будь-якого онлайн-сервісу.</p>
+    </div>
+  </section>
+
+  <section class="package">
+    <h2>Що входить у <em>повний пакет</em> супроводу</h2>
+    <div class="package-grid">
+      <div class="pkg-item">
+        <span class="pkg-check">✓</span>
+        <div>
+          <span class="pkg-title">Профорієнтація</span>
+          Тести, аналіз інтересів, консультація з радником
+        </div>
+      </div>
+      <div class="pkg-item">
+        <span class="pkg-check">✓</span>
+        <div>
+          <span class="pkg-title">Підбір університетів</span>
+          До 10 варіантів з аналізом шансів і вартості
+        </div>
+      </div>
+      <div class="pkg-item">
+        <span class="pkg-check">✓</span>
+        <div>
+          <span class="pkg-title">Підготовка мови</span>
+          Діагностика, вибір іспиту, матеріали
+        </div>
+      </div>
+      <div class="pkg-item">
+        <span class="pkg-check">✓</span>
+        <div>
+          <span class="pkg-title">Подача через UCAS</span>
+          Повний супровід, Personal Statement, дедлайни
+        </div>
+      </div>
+      <div class="pkg-item">
+        <span class="pkg-check">✓</span>
+        <div>
+          <span class="pkg-title">Підготовка до співбесід</span>
+          Моковані інтерв'ю, специфічні тести, зворотній зв'язок
+        </div>
+      </div>
+      <div class="pkg-item">
+        <span class="pkg-check">✓</span>
+        <div>
+          <span class="pkg-title">Візовий супровід</span>
+          CAS, документи, фінансові вимоги, заявка
+        </div>
+      </div>
+      <div class="pkg-item">
+        <span class="pkg-check">✓</span>
+        <div>
+          <span class="pkg-title">Пошук і бронювання житла</span>
+          Підбір, поради по районах, допомога з договором
+        </div>
+      </div>
+      <div class="pkg-item">
+        <span class="pkg-check">✓</span>
+        <div>
+          <span class="pkg-title">Зустріч в аеропорту</span>
+          Единбург або Глазго — особисто, трансфер
+        </div>
+      </div>
+      <div class="pkg-item">
+        <span class="pkg-check">✓</span>
+        <div>
+          <span class="pkg-title">Старт у країні</span>
+          GP, банк, BRP, SIM, транспорт — перший тиждень
+        </div>
+      </div>
+      <div class="pkg-item">
+        <span class="pkg-check">✓</span>
+        <div>
+          <span class="pkg-title">Підтримка під час навчання</span>
+          Наставник і консультації протягом першого семестру
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="pricing" id="pricing">
+    <button class="pricing-trigger" id="pricingBtn" aria-expanded="false" aria-controls="pricingBody">
+      <h2>Послуги та <em>вартість</em></h2>
+      <div class="pricing-arrow" id="pricingArrow">⌄</div>
+    </button>
+    <div class="pricing-body" id="pricingBody" hidden="">
+
+      <div class="pricing-item">
+        <div class="pricing-item-info">
+          <div class="pricing-item-title">Перша ознайомча консультація</div>
+          <div class="pricing-item-desc">20–30 хвилин онлайн. Обговорюємо твій бекґраунд, цілі, підходящі університети та програми, вимоги до вступу і наступні кроки.</div>
+        </div>
+        <div class="pricing-item-price">
+          Безкоштовно
+        </div>
+      </div>
+
+      <div class="pricing-item">
+        <div class="pricing-item-info">
+          <div class="pricing-item-title">Стратегічна консультація з письмовим фідбеком</div>
+          <div class="pricing-item-desc">1.5 години онлайн. Глибокий розбір твоєї ситуації: вибір університетів, аналіз шансів, план підготовки і письмові рекомендації для наступних кроків.</div>
+        </div>
+        <div class="pricing-item-price">
+          £90
+          <small>1.5 години</small>
+        </div>
+      </div>
+
+      <div class="pricing-item">
+        <div class="pricing-item-info">
+          <div class="pricing-item-title">Повний супровід</div>
+          <div class="pricing-item-desc">Індивідуальний пакет залежно від запиту — від підготовки UCAS до зустрічі в аеропорту. Обговорюємо обсяг і вартість на першій консультації.</div>
+        </div>
+        <div class="pricing-item-price">
+          Індивідуально
+          <small>за запитом</small>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <section class="cta">
+    <div>
+      <h2>Почнемо з <em>безкоштовної</em> ознайомчої консультації</h2>
+      <p>Без зобов'язань. За 20–30 хвилин мы разом розберемо твою ситуацію і визначимо наступні кроки. На консультації обговоримо:</p>
+      <ul class="cta-list">
+        <li>Твій академічний бекґраунд і навчальні цілі</li>
+        <li>Підходящі країни, університети та програми</li>
+        <li>Вимоги до вступу та рівень англійської</li>
+        <li>Вартість навчання і можливі стипендії</li>
+        <li>Терміни подачі та процес вступу</li>
+        <li>Студентська віза і наступні кроки</li>
+      </ul>
+      <p class="cta-note">Після консультації ти отримаєш індивідуальний план дій — незалежно від того, чи продовжиш з нами.</p>
+    </div>
+    <div class="cta-action">
+      <div class="label">Перша зустріч</div>
+      <div class="time">20–30 хвилин, онлайн</div>
+      <a href="https://calendly.com/YOUR-LINK-HERE" target="_blank" class="btn">Забронювати консультацію</a>
+      <div class="divider">
+        <div class="divider-label">Підготуй заздалегідь</div>
+        <ul class="prep-list">
+          <li>Твій останній диплом або атестат</li>
+          <li>Бажаний напрямок або спеціальність</li>
+          <li>Орієнтовний бюджет на навчання і проживання</li>
+          <li>Результати мовного тесту (IELTS, PTE тощо), якщо є</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div>
+      <div class="sign">З теплом, команда підтримки студентів</div>
+      <div style="margin-top: 6px; opacity: 0.7;">Edinburgh &amp; Glasgow Student Support</div>
+    </div>
+    <div class="footer-sources">
+      Джерела: GOV.UK · British Council · NHS · UCAS
+    </div>
+  </footer>
+
+</div>
+
+<script>
+  var btn = document.getElementById('pricingBtn');
+  var body = document.getElementById('pricingBody');
+  var arrow = document.getElementById('pricingArrow');
+  var wrap = document.getElementById('pricing');
+
+  btn.addEventListener('click', function() {
+    var isOpen = !body.hidden;
+    body.hidden = isOpen;
+    btn.setAttribute('aria-expanded', String(!isOpen));
+    if (isOpen) {
+      wrap.classList.remove('pricing-open');
+    } else {
+      wrap.classList.add('pricing-open');
+    }
+  });
+</script>
+
+</body></html>
